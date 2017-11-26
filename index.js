@@ -6,7 +6,7 @@
 //// use like so 'node index <module to search>'
 ////////////////////////////////////////////////////////
 
-var fs = require("fs");
+var fs = require(`fs`);
 
 var query, requireRegEx, usedByRegEx, requiredBy = [], usedBy = [];
 
@@ -14,7 +14,7 @@ process.argv.forEach(function (val, idx) {
 	if(idx === 2){
 		query = val;
 	}
-	if(idx === 3){
+	if(idx >= 3){
 		throw `Can search for one module at a time`;
 	}
 });
