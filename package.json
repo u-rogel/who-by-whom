@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "Find which module is being required/imported by which",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index",
-    "lint": "./node_modules/.bin/eslint ./**.js"
-  },
-  "keywords": [],
   "author": "cowCrazy",
   "license": "ISC",
   "dependencies": {},
@@ -17,5 +11,14 @@
   },
   "bin": {
     "wbw": "./cli.js"
-  }
+  },
+  "keywords": [
+	  "require",
+	  "import",
+	  "module",
+	  "package",
+	  "who",
+	  "whom",
+	  "which"
+  ]
 }
