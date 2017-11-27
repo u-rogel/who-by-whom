@@ -1,7 +1,7 @@
 {
-  "name": "node-which",
+  "name": "who-by-whom",
   "version": "1.0.0",
-  "description": "",
+  "description": "Find which module is being required/imported by which",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,10 +9,13 @@
     "lint": "./node_modules/.bin/eslint ./**.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "cowCrazy",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^4.12.0"
+  },
+  "bin": {
+    "wbw": "./cli.js"
   }
 }
