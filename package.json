@@ -1,24 +1,26 @@
 {
-  "name": "who-by-whom",
-  "version": "1.0.0",
-  "description": "Find which module is being required/imported by which",
-  "main": "index.js",
-  "author": "cowCrazy",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "eslint": "^4.12.0"
-  },
-  "bin": {
-    "wbw": "./cli.js"
-  },
-  "keywords": [
-	  "require",
-	  "import",
-	  "module",
-	  "package",
-	  "who",
-	  "whom",
-	  "which"
-  ]
-}
+	"name": "who-by-whom",
+	"version": "1.0.0",
+	"description": "Find which node.js module is being required/imported by which",
+	"main": "index.js",
+	"author": "cowCrazy",
+	"license": "MIT",
+	"repository": "https://github.com/cowCrazy/who-by-whom",
+	"dependencies": {},
+	"devDependencies": {
+	  "eslint": "^4.12.0"
+	},
+	"bin": {
+	  "wbw": "./cli.js"
+	},
+	"keywords": [
+		"require",
+		"import",
+		"module",
+		"package",
+		"who",
+		"whom",
+		"which"
+	]
+  }
+  

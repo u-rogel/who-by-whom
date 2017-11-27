@@ -6,7 +6,6 @@ var which = require(`./index`);
 var query;
 
 process.argv.forEach(function (val, idx) {
-	console.log(val);
 	if(idx === 2){
 		query = val;
 	}
@@ -19,4 +18,7 @@ if(!query){
 	throw `Must supply a module to search, use this form 'npm wbw <module to search>'`;
 }
 
-which(query);
+var result = which(query);
+
+console.log(`required by:`, result.requiredBy);
+console.log(`used by:`, result.usedBy);

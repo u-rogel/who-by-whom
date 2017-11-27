@@ -75,6 +75,8 @@ module.exports = function main(query, ...args){
 
 	searchDir(`./node_modules`);
 
-	console.log(`required by:`, requiredBy);
-	console.log(`used by:`, usedBy);
+	return {
+		requiredBy, 
+		usedBy
+	};
 };
