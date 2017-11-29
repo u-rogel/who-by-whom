@@ -69,8 +69,7 @@ module.exports = function main(query, ...args){
 
 	// filter module name from path
 	function filterModuleName(path){
-		path = path.slice(15);
-		return path.replace(/\/.*$/, ``);
+		return path.slice(path.lastIndexOf(`/`) + 1);
 	}
 
 	searchDir(`./node_modules`);
