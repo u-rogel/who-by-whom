@@ -7,7 +7,7 @@
 var fs = require(`fs`);
 var path = require(`path`);
 
-module.exports = function main(query, options){
+module.exports = function main(query, options = {}){
 	
 	`use strict`;
 
@@ -66,8 +66,8 @@ module.exports = function main(query, options){
 	}
 
 	// filter module name from path
-	function filterModuleName(path){
-		return path.slice(path.lastIndexOf(`/`) + 1);
+	function filterModuleName(dir){
+		return path.relative(process.cwd() + "/node_modules", dir).replace(/\/.*$/, "");
 	}
 
 	searchDir(path.join(cwd, `./node_modules`));
